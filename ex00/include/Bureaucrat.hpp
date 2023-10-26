@@ -6,7 +6,7 @@
 /*   By: dpalmer <dpalmer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 07:29:54 by dpalmer           #+#    #+#             */
-/*   Updated: 2023/10/26 07:32:39 by dpalmer          ###   ########.fr       */
+/*   Updated: 2023/10/26 08:52:40 by dpalmer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,8 @@ class Bureaucrat
 		Bureaucrat(int grade);
 		Bureaucrat(const std::string name);
 		Bureaucrat(const std::string name, int grade);
-
-		~Bureaucrat();
-
 		Bureaucrat &operator=(const Bureaucrat &src);
+		~Bureaucrat();
 
 		void incrementGrade(void);
 		void decrementGrade(void);

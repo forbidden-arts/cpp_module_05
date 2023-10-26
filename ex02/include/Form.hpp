@@ -6,7 +6,7 @@
 /*   By: dpalmer <dpalmer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 08:16:23 by dpalmer           #+#    #+#             */
-/*   Updated: 2023/10/26 08:52:25 by dpalmer          ###   ########.fr       */
+/*   Updated: 2023/10/26 08:52:08 by dpalmer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ class Form
 		~Form();
 
 		void beSigned(Bureaucrat &signer);
+		virtual void execute(Bureaucrat const &executor)const = 0;
 		
 		const std::string getName(void)const;
 		const std::string getIsSigned(void)const;
@@ -53,6 +54,11 @@ class Form
 	};
 
 	class GradeTooHighException : public std::exception
+	{
+	public:
+		virtual const char *what() const throw();
+	};
+	class FormNotSignedException : public std::exception
 	{
 	public:
 		virtual const char *what() const throw();
