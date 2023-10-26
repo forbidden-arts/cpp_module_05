@@ -6,7 +6,7 @@
 /*   By: dpalmer <dpalmer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 08:28:41 by dpalmer           #+#    #+#             */
-/*   Updated: 2023/10/26 11:35:59 by dpalmer          ###   ########.fr       */
+/*   Updated: 2023/10/26 11:59:50 by dpalmer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -124,10 +124,10 @@ const char *Form::GradeTooHighException::what(void) const throw()
 
 std::ostream	&operator<<(std::ostream &out, Form *a)
 {
-	o << "Form " << a->getName() <<
+	out << "Form " << a->getName() <<
 	":\n\tsign-grade:\t" << a->getSignGrade() <<
 	"\n\texec-grade:\t" << a->getExecGrade() <<
 	"\n\tis signed:\t" << a->getIsSigned() <<
 	std::endl;
-	return (o);
+	return (out);
 }
