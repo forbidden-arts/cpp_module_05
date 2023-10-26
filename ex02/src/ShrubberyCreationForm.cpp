@@ -6,7 +6,7 @@
 /*   By: dpalmer <dpalmer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 09:02:01 by dpalmer           #+#    #+#             */
-/*   Updated: 2023/10/26 09:07:39 by dpalmer          ###   ########.fr       */
+/*   Updated: 2023/10/26 10:27:13 by dpalmer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,23 +55,15 @@ void	ShrubberyCreationForm::execute(Bureaucrat const &executor)const
 		for (int i = 0; i < 5; i++)
 		{
 			outfile <<
-			"         v" << std::endl <<
-			"        >X<" << std::endl <<
-			"         A" << std::endl <<
-			"        d$b" << std::endl <<
-			"      .d\\$$b." << std::endl <<
-			"    .d$i$$\\$$b." << std::endl <<
-			"       d$$@b" << std::endl <<
-			"      d\\$$$ib" << std::endl <<
-			"    .d$$$\\$$$b" << std::endl <<
-			"  .d$$@$$$$\\$$ib." << std::endl <<
-			"      d$$i$$b" << std::endl <<
-			"     d\\$$$$@$b" << std::endl <<
-			"  .d$@$$\\$$$$$@b." << std::endl <<
-			".d$$$$i$$$\\$$$$$$b." << std::endl <<
-			"        ###" << std::endl <<
-			"        ###" << std::endl <<
-			"        ###" << std::endl <<
+				"       _-_" << std::endl <<
+				"    /~~   ~~\\" << std::endl <<
+				" /~~         ~~\\" << std::endl <<
+				"{               }" << std::endl <<
+				" \\  _-     -_  /" << std::endl <<
+				"   ~  \\\\ //  ~" << std::endl <<
+				"_- -   | | _- _" << std::endl <<
+				"  _ -  | |   -_" << std::endl <<
+				"      // \\\\" << std::endl <<
 		std::endl;
 		}
 		outfile.close();

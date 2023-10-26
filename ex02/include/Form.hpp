@@ -6,7 +6,7 @@
 /*   By: dpalmer <dpalmer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 08:16:23 by dpalmer           #+#    #+#             */
-/*   Updated: 2023/10/26 08:52:08 by dpalmer          ###   ########.fr       */
+/*   Updated: 2023/10/26 10:22:29 by dpalmer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@
 #include <string>
 #include <iostream>
 #include "Bureaucrat.hpp"
-
-class Bureaucrat;
 
 class Bureaucrat;
 
@@ -36,11 +34,11 @@ class Form
 		Form(const std::string name);
 		Form(const std::string name, int sign_grade, int exec_grade);
 		Form &operator=(const Form &src);
-		~Form();
+		virtual ~Form();
 
 		void beSigned(Bureaucrat &signer);
 		virtual void execute(Bureaucrat const &executor)const = 0;
-		
+
 		const std::string getName(void)const;
 		const std::string getIsSigned(void)const;
 		bool getIsSignedBool(void)const;

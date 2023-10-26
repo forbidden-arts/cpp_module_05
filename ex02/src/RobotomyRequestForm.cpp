@@ -6,7 +6,7 @@
 /*   By: dpalmer <dpalmer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 09:01:46 by dpalmer           #+#    #+#             */
-/*   Updated: 2023/10/26 09:05:58 by dpalmer          ###   ########.fr       */
+/*   Updated: 2023/10/26 10:10:16 by dpalmer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ void	RobotomyRequestForm::execute(Bureaucrat const &executor)const
 	else if (this->getIsSignedBool() == false)
 		throw (Form::FormNotSignedException());
 	else if (robot_fail++ % 2)
-		std::cout << "BRRRRRRRRRRRRRR\n" << this->getTarget() << " was robotomized" << std::endl;
+		std::cout << this->getTarget() << "'s robotomy succeeded" << std::endl;
 	else
 		std::cout << "Robotomy failed" << std::endl;
 }
