@@ -6,7 +6,7 @@
 /*   By: dpalmer <dpalmer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 08:16:23 by dpalmer           #+#    #+#             */
-/*   Updated: 2023/10/26 10:22:29 by dpalmer          ###   ########.fr       */
+/*   Updated: 2023/10/26 11:03:06 by dpalmer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,6 @@ class Form
 	};
 };
 
-std::ostream	&operator<<(std::ostream &o, Form *a);
+std::ostream	&operator<<(std::ostream &out, Form *a);
 
 #endif

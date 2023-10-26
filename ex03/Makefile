@@ -1,4 +1,4 @@
-NAME		=	FormUpAgain
+NAME		=	Intern
 
 CC			=	c++
 
@@ -21,6 +21,7 @@ CUT			=	\033[K
 #source files
 SRC_FILES	=	Bureaucrat				\
 				Form					\
+				Intern					\
 				PresidentialPardonForm	\
 				RobotomyRequestForm		\
 				ShrubberyCreationForm	\

@@ -6,7 +6,7 @@
 /*   By: dpalmer <dpalmer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 07:29:54 by dpalmer           #+#    #+#             */
-/*   Updated: 2023/10/26 08:52:32 by dpalmer          ###   ########.fr       */
+/*   Updated: 2023/10/26 11:03:06 by dpalmer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,6 @@ class Bureaucrat
 	};
 };
 
-std::ostream	&operator<<(std::ostream &o, Bureaucrat *a);
+std::ostream	&operator<<(std::ostream &out, Bureaucrat *a);
 
 #endif

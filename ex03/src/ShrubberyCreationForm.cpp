@@ -6,7 +6,7 @@
 /*   By: dpalmer <dpalmer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 09:02:01 by dpalmer           #+#    #+#             */
-/*   Updated: 2023/10/26 11:36:18 by dpalmer          ###   ########.fr       */
+/*   Updated: 2023/10/26 11:36:35 by dpalmer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,6 +69,7 @@ void	ShrubberyCreationForm::execute(Bureaucrat const &executor)const
 		outfile.close();
 	}
 }
+
 
 std::string	ShrubberyCreationForm::getTarget(void)const
 {

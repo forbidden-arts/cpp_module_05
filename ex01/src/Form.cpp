@@ -6,13 +6,12 @@
 /*   By: dpalmer <dpalmer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 08:28:41 by dpalmer           #+#    #+#             */
-/*   Updated: 2023/10/26 08:32:14 by dpalmer          ###   ########.fr       */
+/*   Updated: 2023/10/26 11:35:59 by dpalmer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Form.hpp"
 
-// Constructors
 Form::Form(void): _name("default"), _is_signed(false), _sign_grade(150), _exec_grade(150)
 {
 	std::cout << "Form Default Constructor called" << std::endl;
@@ -123,7 +122,7 @@ const char *Form::GradeTooHighException::what(void) const throw()
 	return ("Grade too high");
 };
 
-std::ostream	&operator<<(std::ostream &o, Form *a)
+std::ostream	&operator<<(std::ostream &out, Form *a)
 {
 	o << "Form " << a->getName() <<
 	":\n\tsign-grade:\t" << a->getSignGrade() <<

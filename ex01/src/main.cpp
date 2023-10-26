@@ -6,7 +6,7 @@
 /*   By: dpalmer <dpalmer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 08:33:33 by dpalmer           #+#    #+#             */
-/*   Updated: 2023/10/26 08:40:28 by dpalmer          ###   ########.fr       */
+/*   Updated: 2023/10/26 11:57:35 by dpalmer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,6 @@ int main(void)
 
 		try
 		{
-			// c->beSigned(*a);
 			a->signForm(*c);
 		}
 		catch(Bureaucrat::GradeTooLowException &e)
@@ -65,7 +64,6 @@ int main(void)
 		try
 		{
 			c->beSigned(*b);
-			// b->signForm(*c);
 		}
 		catch(Bureaucrat::GradeTooLowException &e)
 		{
