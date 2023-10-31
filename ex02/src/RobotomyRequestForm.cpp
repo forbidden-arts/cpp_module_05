@@ -6,7 +6,7 @@
 /*   By: dpalmer <dpalmer@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 09:01:46 by dpalmer           #+#    #+#             */
-/*   Updated: 2023/10/26 11:03:06 by dpalmer          ###   ########.fr       */
+/*   Updated: 2023/10/31 10:42:54 by dpalmer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,10 +64,10 @@ std::string	RobotomyRequestForm::getTarget(void)const
 
 std::ostream	&operator<<(std::ostream &out, RobotomyRequestForm *a)
 {
-	o << "Form " << a->getName() <<
+	out << "Form " << a->getName() <<
 	":\n\tsign-grade:\t" << a->getSignGrade() <<
 	"\n\texec-grade:\t" << a->getExecGrade() <<
 	"\n\tis signed:\t" << a->getIsSigned() <<
 	std::endl;
-	return (o);
+	return (out);
 }
